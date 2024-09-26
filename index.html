@@ -14,13 +14,23 @@
     <main class="content">
       <section class="result">
         <div class="result__video-container">
+          <template class="preloader-template">
+            <div class="preloader">
+              <div class="preloader-chasing-squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+              </div>
+            </div>
+          </template>
           <video src="" controls class="result__video" poster=""></video>
         </div>
         <form class="search-form">
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
-            <label class="search-form__label">
-              <span class="search-form__label-text visually-hidden">Город</span>
+            <label class="search-form__label search-form__border">
+              <span class="search-form__label-text visually-hidden ">Город</span>
               <input
                 type="text"
                 placeholder="Санкт Петербург, например"
@@ -74,14 +84,36 @@
           <span class="content__accent">По-</span><br />смотри<br />в окно
         </h1>
         <ul class="content__list">
-          <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
+          <template class="preloader-template">
+            <div class="preloader">
+              <div class="preloader-chasing-squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+              </div>
+            </div>
+          </template>
+          <template class="cards-list-item-template">
+            <li class="content__list-item">
+              <a href="#0" class="content__card-link">
+                <article class="content__video-card">
+                  <div class="content__video-card-description-container">
+                    <h2 class="content__video-card-title"></h2>
+                    <p class="content__video-card-description"></p>
+                  </div>
+                  <img src="" alt="" class="content__video-card-thumbnail" />
+                </article>
+              </a>
+            </li>
+          </template>
         </ul>
       </section>
     </main>
 
     <!-- ТЕМПЛЕЙТЫ -->
 
-    <template class="preloader-template">
+    <!-- <template class="preloader-template">
       <div class="preloader">
         <div class="preloader-chasing-squares">
           <div class="square"></div>
@@ -90,9 +122,9 @@
           <div class="square"></div>
         </div>
       </div>
-    </template>
+    </template> -->
 
-    <template class="cards-list-item-template">
+    <!-- <template class="cards-list-item-template">
       <li class="content__list-item">
         <a href="#0" class="content__card-link">
           <article class="content__video-card">
@@ -104,7 +136,7 @@
           </article>
         </a>
       </li>
-    </template>
+    </template> -->
     <template class="more-button-template">
       <li><button class="button more-button">Показать еще</button></li>
     </template>
