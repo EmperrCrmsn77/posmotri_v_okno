@@ -100,10 +100,10 @@ ol {
 }
 
 
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  /* outline-offset: 3px; */
-  /* border: none; */
+  outline-offset: 2px;
 }
 
 .search-form__label:hover {
@@ -126,8 +126,13 @@ ol {
   font-size: 18px;
   line-height: 21.6px;
   letter-spacing: -1px;
+  outline-width: 0;
   color:rgba(255, 255, 255, 0.7);
   font-family: 'Fira Sans', 'Arial', Condensed;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
